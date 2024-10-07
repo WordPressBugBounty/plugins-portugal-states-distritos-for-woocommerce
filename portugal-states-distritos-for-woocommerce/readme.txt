@@ -2,9 +2,9 @@
 Contributors: webdados, ptwooplugins
 Tags: states, districts, postcode, address, portugal
 Requires at least: 5.4
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.0
-Stable tag: 3.7
+Stable tag: 3.8
 
 This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal.
 
@@ -83,6 +83,11 @@ If you reach us by email or any other direct contact means, we’ll assume you n
 You can report any security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/portugal-states-distritos-for-woocommerce). The Patchstack team will assist you with verification, CVE assignment and take care of notifying the developers of this plugin.
 
 == Changelog ==
+
+= 3.8 - 2024-10-07 =
+* [FIX] Remove unused `postcode_before_city` locale property which was causing a PHP notice on the blocks checkout
+* [DEV] Requires WooCommerce 7.0
+* [DEV] Tested with WordPress 6.7-beta1-59158 and WooCommerce 9.4.0-beta.2
 
 = 3.7 - 2024-04-20 =
 * [TWEAK] Compatibility with checkout block custom fields

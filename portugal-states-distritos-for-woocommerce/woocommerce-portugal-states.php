@@ -3,15 +3,15 @@
  * Plugin Name: Portugal States (Distritos) for WooCommerce
  * Plugin URI: https://www.webdados.pt/wordpress/plugins/portugal-states-distritos-woocommerce-wordpress/
  * Description: This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal
- * Version: 3.6
+ * Version: 3.8
  * Author: PT Woo Plugins (by Webdados)
  * Author URI: https://ptwooplugins.com
  * Text Domain: portugal-states-distritos-for-woocommerce
  * Domain Path: /lang
- * Requires at least: 5.4
+ * Requires at least: 5.6
  * Requires PHP: 7.0
- * WC requires at least: 5.4
- * WC tested up to: 8.9
+ * WC requires at least: 7.0
+ * WC tested up to: 9.4
  * Requires Plugins: woocommerce
 */
 
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /* Init */
 add_action( 'plugins_loaded', 'woocommerce_portugal_states_init' );
 function woocommerce_portugal_states_init() {
-	if ( class_exists( 'WooCommerce' ) && defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '4.0', '>=' ) ) {
+	if ( class_exists( 'WooCommerce' ) && defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '7.0', '>=' ) ) {
 		//Localization
 		load_plugin_textdomain( 'portugal-states-distritos-for-woocommerce' );
 		//Load the class
@@ -104,7 +104,6 @@ final class WC_Webdados_Distritos {
 		if ( ! isset( $countries['PT'] ) ) {
 			$countries['PT'] = array();
 		}
-		$countries['PT']['postcode_before_city'] = true;
 		$countries['PT']['postcode']             = array(
 			'priority' => apply_filters( 'woocommerce_portugal_postcode_priority', 65 ), //Like Spain
 			'class'    => apply_filters( 'woocommerce_portugal_postcode_class', array( 'form-row-first' ) ), //From 3.0 onwards
