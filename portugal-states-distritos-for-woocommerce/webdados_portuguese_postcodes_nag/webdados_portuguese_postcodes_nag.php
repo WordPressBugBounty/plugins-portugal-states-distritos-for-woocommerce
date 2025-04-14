@@ -26,7 +26,7 @@
 				<br/>
 				<?php echo sprintf(
 					__( 'Activate the automatic filling of the address details at the checkout, including street name and neighbourhood, based on the postal, avoiding incorrect data at the time of shipping, with our plugin %1$sPortuguese Postcodes for WooCommerce%2$s', 'portugal-states-distritos-for-woocommerce' ),
-					'<a href="https://ptwooplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/" target="_blank">',
+					'<a href="https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/" target="_blank">',
 					'</a>'
 				); ?>
 				<br/>

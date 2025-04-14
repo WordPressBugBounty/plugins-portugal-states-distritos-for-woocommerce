@@ -1,10 +1,12 @@
 === Portugal States (Distritos) for WooCommerce ===
-Contributors: webdados, ptwooplugins
+Contributors: nakedcatplugins, webdados
 Tags: states, districts, postcode, address, portugal
-Requires at least: 5.4
-Tested up to: 6.7
-Requires PHP: 7.0
-Stable tag: 3.8
+Requires at least: 5.8
+Tested up to: 6.8
+Requires PHP: 7.2
+Stable tag: 3.9
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal.
 
@@ -16,6 +18,8 @@ Also sets the right name for "Districts" and the correct "Postcode"/"City" order
 
 And... that’s pretty much it.
 
+Banner photo by [Nilo Velez](https://wordpress.org/photos/photo/13866332ac/).
+
 = Features: =
 
 * Adds the Portuguese "States", known as "Distritos", to WooCommerce
@@ -23,7 +27,7 @@ And... that’s pretty much it.
 
 = Do your customers still write the full address details manually on the checkout? =
 
-Activate the automatic filling of the address details at the checkout, including street name and neighbourhood, based on the postal, avoiding incorrect data at the time of shipping, with our plugin [Portuguese Postcodes for WooCommerce](https://ptwooplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/)
+Activate the automatic filling of the address details at the checkout, including street name and neighbourhood, based on the postal, avoiding incorrect data at the time of shipping, with our plugin [Portuguese Postcodes for WooCommerce](https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/)
 
 The Portuguese Postcodes plugin can also do a district-postcode cross validation on checkout and guarantee they match.
 
@@ -35,16 +39,16 @@ If not, get to know our new plugin: [Invoicing with InvoiceXpress for WooCommerc
 
 Already know our other WooCommerce (premium) plugins?
 
-* [Portuguese Postcodes for WooCommerce](https://ptwooplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/) - Automatic filling of the address details at the checkout, including street name and neighborhood, based on the postal code
+* [Portuguese Postcodes for WooCommerce](https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/) - Automatic filling of the address details at the checkout, including street name and neighborhood, based on the postal code
 * [Invoicing with InvoiceXpress for WooCommerce](https://invoicewoo.com/) - Automatically issue invoices directly from the WooCommerce order
-* [DPD Portugal for WooCommerce](https://ptwooplugins.com/product/dpd-portugal-for-woocommerce/) - Create shipping and return guide in the DPD webservice directly from the WooCommerce order
-* [Feed KuantoKusta for WooCommerce](https://ptwooplugins.com/product/feed-kuantokusta-for-woocommerce-pro/) - Publish your products on Kuanto Kusta with this easy to use feed generator
-* [Multibanco, MBWAY, Credit card, Payshop and Cofidis Pay for WooCommerce – PRO add-on](https://ptwooplugins.com/product/multibanco-mbway-credit-card-payshop-ifthenpay-woocommerce-pro-add-on/) - Extra features for the plugin you already trust to receive payments on your WooCommerce store
-* [Simple Custom Fields for WooCommerce Blocks Checkout](https://ptwooplugins.com/product/simple-custom-fields-for-woocommerce-blocks-checkout/) - Add custom fields to the new WooCommerce Block-based Checkout
-* [Simple WooCommerce Order Approval](https://ptwooplugins.com/product/simple-woocommerce-order-approval/) - The hassle-free solution for WooCommerce order approval before payment
-* [Shop as Client for WooCommerce](https://ptwooplugins.com/product/shop-as-client-for-woocommerce-pro-add-on/) - Quickly create orders on behalf of your customers
-* [Taxonomy/Term and Role based Discounts for WooCommerce](https://ptwooplugins.com/product/taxonomy-term-and-role-based-discounts-for-woocommerce-pro-add-on/) - Easily create bulk discount rules for products based on any taxonomy terms (built-in or custom)
-* [DPD / SEUR / Geopost Pickup and Lockers network for WooCommerce](https://ptwooplugins.com/product/dpd-seur-geopost-pickup-and-lockers-network-for-woocommerce/) - Deliver your WooCommerce orders on the DPD and SEUR Pickup network of Parcelshops and Lockers in 21 European countries
+* [DPD Portugal for WooCommerce](https://nakedcatplugins.com/product/dpd-portugal-for-woocommerce/) - Create shipping and return guide in the DPD webservice directly from the WooCommerce order
+* [Feed KuantoKusta for WooCommerce](https://nakedcatplugins.com/product/feed-kuantokusta-for-woocommerce-pro/) - Publish your products on Kuanto Kusta with this easy to use feed generator
+* [Multibanco, MBWAY, Credit card, Payshop and Cofidis Pay for WooCommerce – PRO add-on](https://nakedcatplugins.com/product/multibanco-mbway-credit-card-payshop-ifthenpay-woocommerce-pro-add-on/) - Extra features for the plugin you already trust to receive payments on your WooCommerce store
+* [Simple Checkout Fields Manager for WooCommerce](https://nakedcatplugins.com/product/simple-custom-fields-for-woocommerce-blocks-checkout/) - Add custom fields and manage (remove, make required or optional) core fields on the new WooCommerce Block-based Checkout
+* [Simple WooCommerce Order Approval](https://nakedcatplugins.com/product/simple-woocommerce-order-approval/) - The hassle-free solution for WooCommerce order approval before payment
+* [Shop as Client for WooCommerce](https://nakedcatplugins.com/product/shop-as-client-for-woocommerce-pro-add-on/) - Quickly create orders on behalf of your customers
+* [Taxonomy/Term and Role based Discounts for WooCommerce](https://nakedcatplugins.com/product/taxonomy-term-and-role-based-discounts-for-woocommerce-pro-add-on/) - Easily create bulk discount rules for products based on any taxonomy terms (built-in or custom)
+* [DPD / SEUR / Geopost Pickup and Lockers network for WooCommerce](https://nakedcatplugins.com/product/dpd-seur-geopost-pickup-and-lockers-network-for-woocommerce/) - Deliver your WooCommerce orders on the DPD and SEUR Pickup network of Parcelshops and Lockers in 21 European countries
 
 == Installation ==
 
@@ -83,6 +87,11 @@ If you reach us by email or any other direct contact means, we’ll assume you n
 You can report any security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/portugal-states-distritos-for-woocommerce). The Patchstack team will assist you with verification, CVE assignment and take care of notifying the developers of this plugin.
 
 == Changelog ==
+
+= 3.9 - 2025-04-14 =
+* [NEW] We are now called Naked Cat Plugins 😻
+* [DEV] Requires WordPress 5.8, WooCommerce 7.1, and PHP 7.2
+* [DEV] Tested with WordPress 6.8-RC3-60146 and WooCommerce 9.8.1
 
 = 3.8 - 2024-10-07 =
 * [FIX] Remove unused `postcode_before_city` locale property which was causing a PHP notice on the blocks checkout
@@ -144,7 +153,7 @@ You can report any security bugs found in the source code of this plugin through
 * Tested with 5.6-beta3-49562 and WooCommerce 4.8.0-beta.1
 
 = 2.1.7 =
-* New [Portuguese Postcodes for WooCommerce](https://ptwooplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/) plugin information
+* New [Portuguese Postcodes for WooCommerce](https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/) plugin information
 * Tested with 5.5-alpha-47761 and WooCommerce 4.1.0-rc.2
 
 = 2.1.6 =

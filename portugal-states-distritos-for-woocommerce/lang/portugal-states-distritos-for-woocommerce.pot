@@ -1,16 +1,16 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Portugal States (Distritos) for WooCommerce\n"
-"POT-Creation-Date: 2021-04-08 09:44+0100\n"
+"POT-Creation-Date: 2025-04-14 09:06+0100\n"
 "PO-Revision-Date: 2017-03-27 15:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: woocommerce-portugal-states.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,114 +22,108 @@ msgstr ""
 
 #: webdados_portuguese_postcodes_nag/webdados_portuguese_postcodes_nag.php:25
 msgid ""
-"Do your customers still write the full postal code manually on the "
-"checkout?"
+"Do your customers still write the full address manually on the checkout?"
 msgstr ""
 
 #: webdados_portuguese_postcodes_nag/webdados_portuguese_postcodes_nag.php:28
 #, php-format
 msgid ""
-"Activate the automatic filling of the postal code at the checkout, "
-"avoiding incorrect data at the time of sending, with our plugin "
-"%1$sPortuguese Postcodes for WooCommerce%2$s"
+"Activate the automatic filling of the address details at the checkout, "
+"including street name and neighbourhood, based on the postal, avoiding "
+"incorrect data at the time of shipping, with our plugin %1$sPortuguese "
+"Postcodes for WooCommerce%2$s"
 msgstr ""
 
-#: webdados_portuguese_postcodes_nag/webdados_portuguese_postcodes_nag.php:31
-msgid ""
-"https://www.webdados.pt/wordpress/plugins/codigos-postais-portugueses-para-"
-"woocommerce/"
-msgstr ""
-
-#: webdados_portuguese_postcodes_nag/webdados_portuguese_postcodes_nag.php:36
-#, php-format
+#: webdados_portuguese_postcodes_nag/webdados_portuguese_postcodes_nag.php:33
+#, no-php-format
 msgid "Use the coupon <strong>webdados</strong> for 10% discount!"
 msgstr ""
 
-#: woocommerce-portugal-states.php:71
+#: woocommerce-portugal-states.php:79
 msgid "Azores"
 msgstr ""
 
-#: woocommerce-portugal-states.php:72
+#: woocommerce-portugal-states.php:80
 msgid "Aveiro"
 msgstr ""
 
-#: woocommerce-portugal-states.php:73
+#: woocommerce-portugal-states.php:81
 msgid "Beja"
 msgstr ""
 
-#: woocommerce-portugal-states.php:74
+#: woocommerce-portugal-states.php:82
 msgid "Braga"
 msgstr ""
 
-#: woocommerce-portugal-states.php:75
+#: woocommerce-portugal-states.php:83
 msgid "Bragança"
 msgstr ""
 
-#: woocommerce-portugal-states.php:76
+#: woocommerce-portugal-states.php:84
 msgid "Castelo Branco"
 msgstr ""
 
-#: woocommerce-portugal-states.php:77
+#: woocommerce-portugal-states.php:85
 msgid "Coimbra"
 msgstr ""
 
-#: woocommerce-portugal-states.php:78
+#: woocommerce-portugal-states.php:86
 msgid "Évora"
 msgstr ""
 
-#: woocommerce-portugal-states.php:79
+#: woocommerce-portugal-states.php:87
 msgid "Faro"
 msgstr ""
 
-#: woocommerce-portugal-states.php:80
+#: woocommerce-portugal-states.php:88
 msgid "Guarda"
 msgstr ""
 
-#: woocommerce-portugal-states.php:81
+#: woocommerce-portugal-states.php:89
 msgid "Leiria"
 msgstr ""
 
-#: woocommerce-portugal-states.php:82
+#: woocommerce-portugal-states.php:90
 msgid "Lisbon"
 msgstr ""
 
-#: woocommerce-portugal-states.php:83
+#: woocommerce-portugal-states.php:91
 msgid "Madeira"
 msgstr ""
 
-#: woocommerce-portugal-states.php:84
+#: woocommerce-portugal-states.php:92
 msgid "Portalegre"
 msgstr ""
 
-#: woocommerce-portugal-states.php:85
+#: woocommerce-portugal-states.php:93
 msgid "Oporto"
 msgstr ""
 
-#: woocommerce-portugal-states.php:86
+#: woocommerce-portugal-states.php:94
 msgid "Santarém"
 msgstr ""
 
-#: woocommerce-portugal-states.php:87
+#: woocommerce-portugal-states.php:95
 msgid "Setúbal"
 msgstr ""
 
-#: woocommerce-portugal-states.php:88
+#: woocommerce-portugal-states.php:96
 msgid "Viana do Castelo"
 msgstr ""
 
-#: woocommerce-portugal-states.php:89
+#: woocommerce-portugal-states.php:97
 msgid "Vila Real"
 msgstr ""
 
-#: woocommerce-portugal-states.php:90
+#: woocommerce-portugal-states.php:98
 msgid "Viseu"
 msgstr ""
 
-#: woocommerce-portugal-states.php:104
+#: woocommerce-portugal-states.php:113
 msgid "Postcode City"
 msgstr ""
 
-#: woocommerce-portugal-states.php:108
+#: woocommerce-portugal-states.php:117
 msgid "District"
 msgstr ""
 
@@ -150,9 +144,9 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Webdados"
+msgid "Naked Cat Plugins (by Webdados)"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://www.webdados.pt"
+msgid "https://nakedcatplugins.com"
 msgstr ""

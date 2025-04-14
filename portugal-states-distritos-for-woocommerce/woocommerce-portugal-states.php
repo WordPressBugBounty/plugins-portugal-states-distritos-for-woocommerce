@@ -1,18 +1,19 @@
 <?php
 /*
- * Plugin Name: Portugal States (Distritos) for WooCommerce
- * Plugin URI: https://www.webdados.pt/wordpress/plugins/portugal-states-distritos-woocommerce-wordpress/
- * Description: This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal
- * Version: 3.8
- * Author: PT Woo Plugins (by Webdados)
- * Author URI: https://ptwooplugins.com
- * Text Domain: portugal-states-distritos-for-woocommerce
- * Domain Path: /lang
- * Requires at least: 5.6
- * Requires PHP: 7.0
- * WC requires at least: 7.0
- * WC tested up to: 9.4
- * Requires Plugins: woocommerce
+ * Plugin Name:          Portugal States (Distritos) for WooCommerce
+ * Plugin URI:           https://www.webdados.pt/wordpress/plugins/portugal-states-distritos-woocommerce-wordpress/
+ * Description:          This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal
+ * Version:              3.9
+ * Author:               Naked Cat Plugins (by Webdados)
+ * Author URI:           https://nakedcatplugins.com
+ * Text Domain:          portugal-states-distritos-for-woocommerce
+ * Requires at least:    5.8
+ * Tested up to:         6.8
+ * Requires PHP:         7.2
+ * WC requires at least: 7.1
+ * WC tested up to:      9.8
+ * Requires Plugins:     woocommerce
+ * License:              GPLv3
 */
 
 /* WooCommerce CRUD not needed */
@@ -25,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /* Init */
 add_action( 'plugins_loaded', 'woocommerce_portugal_states_init' );
 function woocommerce_portugal_states_init() {
-	if ( class_exists( 'WooCommerce' ) && defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '7.0', '>=' ) ) {
+	if ( class_exists( 'WooCommerce' ) && defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '7.1', '>=' ) ) {
 		//Localization
 		load_plugin_textdomain( 'portugal-states-distritos-for-woocommerce' );
 		//Load the class
