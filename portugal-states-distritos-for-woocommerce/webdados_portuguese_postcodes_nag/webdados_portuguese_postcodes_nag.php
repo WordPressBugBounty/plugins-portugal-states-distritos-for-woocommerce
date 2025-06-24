@@ -37,8 +37,8 @@
 	}
 	add_action( 'wp_ajax_dismiss_webdados_portuguese_postcodes_nag', 'dismiss_webdados_portuguese_postcodes_nag' );
 	function dismiss_webdados_portuguese_postcodes_nag() {
-		$days = 90;
-		$expiration = $days * DAY_IN_SECONDS;
-		set_transient( 'webdados_portuguese_postcodes_nag', 1, $expiration );
+		$days                 = 120;
+		$expiration_timestamp = time() + ( $days * DAY_IN_SECONDS );
+		update_user_meta( get_current_user_id(), 'webdados_portuguese_postcodes_nag_dismissed_until', $expiration_timestamp );
 		wp_die();
 	}

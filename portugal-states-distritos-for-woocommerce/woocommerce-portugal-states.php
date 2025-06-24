@@ -3,15 +3,15 @@
  * Plugin Name:          Portugal States (Distritos) for WooCommerce
  * Plugin URI:           https://www.webdados.pt/wordpress/plugins/portugal-states-distritos-woocommerce-wordpress/
  * Description:          This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal
- * Version:              3.9
+ * Version:              4.0
  * Author:               Naked Cat Plugins (by Webdados)
  * Author URI:           https://nakedcatplugins.com
  * Text Domain:          portugal-states-distritos-for-woocommerce
  * Requires at least:    5.8
- * Tested up to:         6.8
+ * Tested up to:         6.9
  * Requires PHP:         7.2
  * WC requires at least: 7.1
- * WC tested up to:      9.8
+ * WC tested up to:      10.0
  * Requires Plugins:     woocommerce
  * License:              GPLv3
 */
@@ -146,11 +146,15 @@ add_action( 'before_woocommerce_init', function() {
 /* Portuguese Postcodes nag */
 add_action( 'admin_init', function() {
 	if (
+		current_user_can( 'manage_woocommerce' )
+		&&
 		( ! defined( 'WEBDADOS_PORTUGUESE_POSTCODES_NAG' ) )
 		&&
 		( ! function_exists( '\Webdados\PortuguesePostcodesWooCommerce\init' ) )
 		&&
-		empty( get_transient( 'webdados_portuguese_postcodes_nag' ) )
+		empty( get_transient( 'webdados_portuguese_postcodes_nag' ) ) // Not used anymore, but kept for backwards compatibility
+		&&
+		( intval( get_user_meta( get_current_user_id(), 'webdados_portuguese_postcodes_nag_dismissed_until', true ) ) < time() )
 	) {
 		define( 'WEBDADOS_PORTUGUESE_POSTCODES_NAG', true );
 		require_once( 'webdados_portuguese_postcodes_nag/webdados_portuguese_postcodes_nag.php' );
