@@ -4,17 +4,17 @@ Tags: states, districts, postcode, address, portugal
 Requires at least: 5.8
 Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: 4.0
+Stable tag: 4.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal.
+This plugin adds the Portuguese “States”, known as “Distritos”, to WooCommerce and sets the correct address format for Portugal.
 
 == Description ==
 
-This plugin adds the 18 Portuguese "States" (known as "Distritos") plus the 2 Autonomous Regions (known as "Regiões Autónomas", Madeira and Açores) to WooCommerce.
+This plugin adds the 18 Portuguese “States” (known as “Distritos”) plus the 2 Autonomous Regions (known as “Regiões Autónomas”, Madeira and Açores) to WooCommerce.
 
-Also sets the right name for "Districts" and the correct "Postcode"/"City" order and the correct address format for Portugal.
+Also sets the right name for “Districts” and the correct “Postcode”/“City” order and the correct address format for Portugal.
 
 And... that’s pretty much it.
 
@@ -22,8 +22,8 @@ Banner photo by [Nilo Velez](https://wordpress.org/photos/photo/13866332ac/).
 
 = Features: =
 
-* Adds the Portuguese "States", known as "Distritos", to WooCommerce
-* Sets the correct address format for Portugal, including the correct "Postal Code"/"City" positioning on the checkout
+* Adds the Portuguese “States”, known as “Distritos”, to WooCommerce
+* Sets the correct address format for Portugal, including the correct “Postal Code”/“City” positioning on the checkout
 
 = Do your customers still write the full address details manually on the checkout? =
 
@@ -52,7 +52,7 @@ Already know our other WooCommerce (premium) plugins?
 
 == Installation ==
 
-Use the included automatic install feature on your WordPress admin panel and search for "Portugal States (Distritos) for WooCommerce".
+Use the included automatic install feature on your WordPress admin panel and search for “Portugal States (Distritos) for WooCommerce”.
 
 == Frequently Asked Questions ==
 
@@ -74,6 +74,16 @@ Yes.
 
 Yes.
 
+= Is this plugin compatible with Express Checkout, like Apple and Google Pay? =
+
+Apple and Google are not requesting the “Distrito” field in Apple Pay addresses, which causes checkout to fail if you set your shipping zones with “Distritos”.
+So, if you’re using these methods, we recommend you set your shipping zones with postcode intervals; for example, one zone for Portugal, restricted to postcodes 0000000...8999999, and another for the islands, restricted to 9000000...9999999.
+You can keep using this plugin, but the shipping zones should be set with postcodes.
+
+Alternatively, version 7.0 of our “[Portuguese Postcodes for WooCommerce](https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/)” plugin, alongside “WooCommerce Stripe Payment Gateway” version 10.2.0 or above, fixes this.
+
+Or you can use Apple Pay and Google Pay via the [ifthenpay gateway with our plugin](https://wordpress.org/plugins/multibanco-ifthen-software-gateway-for-woocommerce/), which fetches the address from the WooCommerce checkout.
+
 = I need help, can I get technical support? =
 
 This is a free plugin. It’s our way of giving back to the wonderful WordPress community.
@@ -88,8 +98,16 @@ You can report any security bugs found in the source code of this plugin through
 
 == Changelog ==
 
+= 4.2 - 2025-12-11 =
+* [TWEAK] Add information to the readme file regarding instant payment methods not requesting “Distrito” for Portuguese addresses, and the fix available by using [Portuguese Postcodes for WooCommerce](https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/)
+* [DEV] Tested with WordPress 7.0-alpha-61365 and WooCommerce 10.4.0
+
+= 4.1 - 2025-10-05 =
+* [TWEAK] Add information to the readme file regarding instant payment methods not requesting “Distrito” for Portuguese addresses
+* [DEV] Tested up to WordPress 6.9-beta2-61099 and WooCommerce 10.3.4
+
 = 4.0 - 2025-06-24 =
-* [TWEAK] Improve the mechanism to keep the "Portuguese Postcodes for WooCommerce" admin notice from showing to the same user in the next 120 days after dismissal
+* [TWEAK] Improve the mechanism to keep the “Portuguese Postcodes for WooCommerce” admin notice from showing to the same user in the next 120 days after dismissal
 * [DEV] Tested up to WordPress 6.9-alpha-60342 and WooCommerce 10.0.0-rc.1
 
 = 3.9 - 2025-04-14 =
@@ -132,7 +150,7 @@ You can report any security bugs found in the source code of this plugin through
 * Tested with WordPress 6.1-alpha-53556 and WooCommerce 6.7.0-beta.2
 
 = 3.0.3 - 2021-05-14 =
-* Fix the order in which we set the address format because other plugin's changes, like EU VAT Assistant, were being overriden
+* Fix the order in which we set the address format because other plugin’s changes, like EU VAT Assistant, were being overriden
 * New `woocommerce_portugal_localisation_address_formats_priority` filter to change the hook priority for the address format
 * Tested with WooCommerce 5.3.0
 
@@ -145,7 +163,7 @@ You can report any security bugs found in the source code of this plugin through
 = 3.0.0 - 2021-04-08 =
 * Complete code refactoring
 * Show Postcode and Postcode City side by side on the checkout and added two new filters to change it: `woocommerce_portugal_postcode_class` and `woocommerce_portugal_city_class`
-* Changed the (english) city label from "Postcode Town / City" to "Postcode City" (no changes in Portuguese)
+* Changed the (english) city label from “Postcode Town / City” to “Postcode City” (no changes in Portuguese)
 * Added support information to the Frequently Asked Questions readme section
 * Requires WooCommerce 3.0
 * Tested with WordPress 5.8-alpha-50689 and WooCommerce 5.2.0-rc.2
@@ -191,18 +209,18 @@ You can report any security bugs found in the source code of this plugin through
 * Bumped `WC tested up to` tag
 
 = 2.1.1 =
-* Added the `woocommerce_portugal_postcode_priority` filter to allow overriding the "Postal Code" priority value
+* Added the `woocommerce_portugal_postcode_priority` filter to allow overriding the “Postal Code” priority value
 
 = 2.1 =
-* Fix "Postal Code"/"City" fields order on the checkout on newer WooCommerce versions
-* The "City" field label is now "Postcode Town / City" on the checkout
-* New `woocommerce_portugal_city_label` filter to be able to change the "City" field label
-* New `woocommerce_portugal_state_label` filter to be able to change the "District" field label
-* New `woocommerce_portugal_state_required` filter to be able to set the "District" field as not required
+* Fix “Postal Code”/“City” fields order on the checkout on newer WooCommerce versions
+* The “City” field label is now “Postcode Town / City” on the checkout
+* New `woocommerce_portugal_city_label` filter to be able to change the “City” field label
+* New `woocommerce_portugal_state_label` filter to be able to change the “District” field label
+* New `woocommerce_portugal_state_required` filter to be able to set the “District” field as not required
 * Bumped `WC tested up to` tag
 
 = 2.0 =
-* Removed the district from the plain text address format for Portugal, as we do not use it on a day to day basis: "{name}\n{company}\n{address_1}\n{address_2}\n{postcode} {city}\n{country}" (can be restored via the `woocommerce_portugal_address_format_include_state` filter)
+* Removed the district from the plain text address format for Portugal, as we do not use it on a day to day basis: “{name}\n{company}\n{address_1}\n{address_2}\n{postcode} {city}\n{country}” (can be restored via the `woocommerce_portugal_address_format_include_state` filter)
 * Better coding standards
 
 = 1.5.3.2 =
@@ -227,10 +245,10 @@ You can report any security bugs found in the source code of this plugin through
 * Bumped `Tested up to` tag
 
 = 1.5 =
-* Sets the correct Portuguese address format: "{name}\n{company}\n{address_1}\n{address_2}\n{postcode} {city}\n{state}\n{country}"
+* Sets the correct Portuguese address format: “{name}\n{company}\n{address_1}\n{address_2}\n{postcode} {city}\n{state}\n{country}”
 
 = 1.4.1 =
-* Bumped "Requires at least" and "Tested up to" tags
+* Bumped “Requires at least” and “Tested up to” tags
 
 = 1.4 =
 * The district is now required by default, as is on all the other countries that have states loaded by the WooCommerce core
@@ -242,7 +260,7 @@ You can report any security bugs found in the source code of this plugin through
 * WordPress Multisite support
 
 = 1.1 =
-* Now also sets the right name for "Districts" and the correct "Postal Code"/"City" order
+* Now also sets the right name for “Districts” and the correct “Postal Code”/“City” order
 
 = 1.0 =
 * Initial release.

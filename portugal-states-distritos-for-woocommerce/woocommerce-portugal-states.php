@@ -1,9 +1,9 @@
 <?php
-/*
+/**
  * Plugin Name:          Portugal States (Distritos) for WooCommerce
  * Plugin URI:           https://www.webdados.pt/wordpress/plugins/portugal-states-distritos-woocommerce-wordpress/
  * Description:          This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal
- * Version:              4.0
+ * Version:              4.2
  * Author:               Naked Cat Plugins (by Webdados)
  * Author URI:           https://nakedcatplugins.com
  * Text Domain:          portugal-states-distritos-for-woocommerce
@@ -11,10 +11,10 @@
  * Tested up to:         6.9
  * Requires PHP:         7.2
  * WC requires at least: 7.1
- * WC tested up to:      10.0
+ * WC tested up to:      10.4
  * Requires Plugins:     woocommerce
  * License:              GPLv3
-*/
+ */
 
 /* WooCommerce CRUD not needed */
 /* WooCommerce HPOS not needed - https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book */
@@ -24,7 +24,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
 /* Init */
-add_action( 'plugins_loaded', 'woocommerce_portugal_states_init' );
 function woocommerce_portugal_states_init() {
 	if ( class_exists( 'WooCommerce' ) && defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '7.1', '>=' ) ) {
 		//Localization
@@ -33,6 +32,7 @@ function woocommerce_portugal_states_init() {
 		$GLOBALS['WC_Webdados_Distritos'] = WC_Webdados_Distritos();
 	}
 }
+add_action( 'plugins_loaded', 'woocommerce_portugal_states_init' );
 
 
 /* Main class */
