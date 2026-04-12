@@ -4,7 +4,7 @@ Tags: states, districts, postcode, address, portugal
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 4.2
+Stable tag: 5.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -98,8 +98,10 @@ You can report any security bugs found in the source code of this plugin through
 
 == Changelog ==
 
+= 5.1 - 2025-04-12 =
+* [FIX] PHP fatal error, introduced in 5.0, in specific scenarios
+
 = 5.0 - 2025-04-10 =
-* removed temporarly
 * [NEW] Plugin ownership transferred from [Marco Almeida | Webdados](https://profiles.wordpress.org/webdados/) to [Naked Cat Plugins](https://profiles.wordpress.org/nakedcatplugins/) on WordPress.org - No worries, we’re the same people :-)
 * [TWEAK] Added [our ifthenpay plugin](https://wordpress.org/plugins/multibanco-ifthen-software-gateway-for-woocommerce/) as a suggested payment gateway in WooCommerce, if still not present (can be removed by setting the `NAKEDCAT_RECOMMEND_IFTHENPAY` constant to true)
 * [DEV] Removed `load_plugin_textdomain` call as WordPress handles it
