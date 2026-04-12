@@ -3,7 +3,7 @@
  * Plugin Name:          Portugal States (Distritos) for WooCommerce
  * Plugin URI:           https://www.webdados.pt/wordpress/plugins/portugal-states-distritos-woocommerce-wordpress/
  * Description:          This plugin adds the Portuguese "States", known as "Distritos", to WooCommerce and sets the correct address format for Portugal
- * Version:              5.1
+ * Version:              5.2
  * Author:               Naked Cat Plugins (by Webdados)
  * Author URI:           https://nakedcatplugins.com
  * Text Domain:          portugal-states-distritos-for-woocommerce

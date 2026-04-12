@@ -4,7 +4,7 @@ Tags: states, districts, postcode, address, portugal
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 5.1
+Stable tag: 5.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -98,8 +98,9 @@ You can report any security bugs found in the source code of this plugin through
 
 == Changelog ==
 
-= 5.1 - 2025-04-12 =
+= 5.2 - 2025-04-12 =
 * [FIX] PHP fatal error, introduced in 5.0, in specific scenarios
+* [FIX] Version number
 
 = 5.0 - 2025-04-10 =
 * [NEW] Plugin ownership transferred from [Marco Almeida | Webdados](https://profiles.wordpress.org/webdados/) to [Naked Cat Plugins](https://profiles.wordpress.org/nakedcatplugins/) on WordPress.org - No worries, we’re the same people :-)
